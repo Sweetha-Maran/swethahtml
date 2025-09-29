@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Now - Burger</title>
+<link rel="stylesheet" href="./order.css">
+</head>
+<body>
+
+  <div class="order-form-container">
+    <h2>Order Your Burger</h2>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Delivery Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Your address..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="burger">Select Burger</label>
+        <select id="burger" name="burger" required>
+          <option value="" disabled selected>Select a burger</option>
+          <option>Classic Chicken - ₹149</option>
+          <option>Spicy Chicken - ₹159</option>
+          <option>BBQ Chicken - ₹169</option>
+          <option>Cheesy Chicken - ₹179</option>
+          <option>Tandoori Chicken - ₹189</option>
+          <option>Classic Veg - ₹99</option>
+          <option>Paneer Delight - ₹129</option>
+          <option>Cheesy Veggie - ₹119</option>
+          <option>Spicy Aloo Tikki - ₹109</option>
+          <option>Healthy Veg - ₹89</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Order Now</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

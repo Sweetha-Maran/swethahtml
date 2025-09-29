@@ -1,0 +1,255 @@
+ body {
+
+      background-color: #FEFBC7;
+      
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      background-color: #FFCB61;
+      justify-content: center;
+      padding: 60px 40px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+.about-image img{
+    width: 600px;
+    height: 800px;
+}
+    .about-image {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .about-content {
+      flex: 1 1 400px;
+    }
+
+    .about-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #d35400;
+    }
+
+    .about-content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .variety-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .variety-list li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .variety-list li::before {
+      content: "🍔 ";
+    }
+
+    
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .about-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .about-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #e67e22;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .about-img {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-img img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Four burger circles */
+    .burger-gallery {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .burger-gallery h2 {
+      font-size: 1.6rem;
+      color: #e67e22;
+      margin-bottom: 20px;
+    }
+
+    .burger-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .burger-images img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .burger-images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive for 430px */
+    @media (max-width: 430px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-img img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .about-text h2 {
+        font-size: 1.4rem;
+      }
+
+      .burger-images {
+        justify-content: center;
+      }
+
+      .burger-images img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .about-content h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .about-content h2 {
+        font-size: 1.6rem;
+      }
+
+      .about-content p {
+        font-size: 0.95rem;
+      }
+
+      .variety-list li {
+        font-size: 0.95rem;
+      }
+    }
+
+      footer {
+      background-color: black;
+      color:white;
+      top: 50px;
+      position: relative;
+      padding: 50px 20px 30px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-col {
+      flex: 1 1 220px;
+    }
+
+    .footer-col h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #e67e22;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      font-size: 0.95rem;
+      color: white;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .footer-col a:hover {
+      color: white;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 1.2rem;
+      color: #e67e22;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 25px;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-col {
+        width: 100%;
+      }
+    }
